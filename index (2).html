@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | WEKEGOGO Horace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Police -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Poppins', sans-serif;
+            background:#f7f9fc;
+            color:#333;
+        }
+
+        /* NAVBAR */
+        nav{
+            position:fixed;
+            top:0;
+            width:100%;
+            background:white;
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+            z-index:1000;
+        }
+
+        nav ul{
+            display:flex;
+            justify-content:center;
+            list-style:none;
+            padding:1rem;
+            gap:2rem;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:#333;
+            font-weight:500;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:#007BFF;
+        }
+
+        /* HEADER */
+        header{
+            height:100vh;
+            background:linear-gradient(rgba(255,255,255,.85),rgba(255,255,255,.85)),
+            url('header.jpg') center/cover;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:2rem;
+        }
+
+        header img{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            object-fit:cover;
+            border:5px solid #007BFF;
+            margin-bottom:1rem;
+            animation:float 3s ease-in-out infinite;
+        }
+
+        header h1{
+            font-size:3rem;
+            color:#007BFF;
+        }
+
+        header p{
+            max-width:600px;
+            margin-top:1rem;
+            font-size:1.1rem;
+        }
+
+        @keyframes float{
+            0%{transform:translateY(0)}
+            50%{transform:translateY(-10px)}
+            100%{transform:translateY(0)}
+        }
+
+        section{
+            padding:5rem 10%;
+        }
+
+        section h2{
+            text-align:center;
+            margin-bottom:3rem;
+            color:#007BFF;
+            font-size:2.2rem;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:2rem;
+        }
+
+        .card{
+            background:white;
+            padding:2rem;
+            border-radius:15px;
+            box-shadow:0 10px 30px rgba(0,0,0,.08);
+            transition:.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card i{
+            font-size:2.5rem;
+            color:#007BFF;
+            margin-bottom:1rem;
+        }
+
+        /* PROJETS */
+        .project img{
+            width:100%;
+            border-radius:10px;
+            margin-bottom:1rem;
+        }
+
+        /* CONTACT */
+        .contact p{
+            font-size:1.1rem;
+            margin:1rem 0;
+        }
+
+        footer{
+            background:#007BFF;
+            color:white;
+            text-align:center;
+            padding:2rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Objectifs</a></li>
+        <li><a href="#interests">Centres d’intérêt</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <img src="profil.jpg" alt="Photo profil">
+    <h1>WEKEGOGO Horace</h1>
+    <p>16 ans — Passionné de technologie — Futur Hacker Éthique & Expert en Cybersécurité</p>
+</header>
+
+<section id="about">
+    <h2>À propos de moi</h2>
+    <p style="text-align:center;max-width:800px;margin:auto;">
+        Je suis un élève passionné par l’informatique, la cybersécurité et le développement web.
+        Mon objectif est de devenir un hacker éthique reconnu à l’international et de contribuer
+        à la sécurité du monde numérique.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Compétences</h2>
+    <div class="cards">
+        <div class="card">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML & CSS</h3>
+            <p>Création de sites modernes, responsives et animés.</p>
+        </div>
+        <div class="card">
+            <i class="fa-brands fa-js"></i>
+            <h3>Programmation</h3>
+            <p>Apprentissage de JavaScript, PHP et Python.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Cybersécurité</h3>
+            <p>Découverte du hacking éthique et des systèmes de protection.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Objectifs professionnels</h2>
+    <div class="cards">
+        <div class="card project">
+            <i class="fa-solid fa-code"></i>
+            <h3>Développement</h3>
+            <p>Créer des applications web, mobiles et des jeux vidéo.</p>
+        </div>
+        <div class="card project">
+            <i class="fa-solid fa-bug"></i>
+            <h3>Sécurité</h3>
+            <p>Analyser, tester et sécuriser des systèmes informatiques.</p>
+        </div>
+    </div>
+</section>
+
+<section id="interests">
+    <h2>Centres d’intérêt</h2>
+    <div class="cards">
+        <div class="card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <p>Programmation</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-user-secret"></i>
+            <p>Hacking éthique</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-gamepad"></i>
+            <p>Jeux vidéo</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p><i class="fa-solid fa-envelope"></i> wekegogohorace715@gmail.com</p>
+    <p><i class="fa-solid fa-location-dot"></i> Abomey-Calavi, Bénin</p>
+</section>
+
+<footer>
+    <p>© 2026 — Portfolio scolaire | Cybersécurité & Responsabilité numérique</p>
+</footer>
+
+</body>
+</html>
